@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 90px);
+    gap: 2px;
+    margin: 10px;
+    justify-content: center;
+}
+.cell {
+    width: 90px;
+    height: 90px;
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stone {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+#turn {
+    font-size: 24px;
+    font-weight: bold;
+
+    background-color: green;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+.black-turn {
+    color: black;
+}
+.white-turn {
+    color: white;
+}
+#reset {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#reset:hover {
+    background-color: rgb(216, 213, 213);
+}
